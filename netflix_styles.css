@@ -1,0 +1,94 @@
+.main_grid{
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px;
+    min-height: 100px;
+    grid-template-areas:
+    "top_box"
+    "get_started_box"
+    "description_box"
+    "description_box"
+    "description_box"
+    "faq_box"
+    "contact_us_box"
+}
+
+.top_box{
+    /*grid-area: top_box;*/
+    position: relative;
+    border: 3px solid red;
+    height: 100px;
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+    border: 3px solid green;
+}
+
+.sign_in{
+    position: absolute;
+    right: 0;
+    border: 3px solid blue;
+}
+
+.enter_email_box{
+    border: 3px solid green;
+    height: 100px;
+    margin: 30px;
+}
+
+.get_started_box{
+    border: 3px solid blue;
+    height: 1000px;
+}
+
+@media only screen{
+  .description_box {
+    border: 3px solid white;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+  }
+}
+
+.description_box_image{
+    border: 3px solid purple;
+    width: 300px;
+    height: 300px;
+}
+
+.description_box_textbox{
+    border: 3px solid orange;
+    width: 400px;
+    height: 300px;
+}
+
+@media only screen and (min-height: 100px) {
+    .faq_box{
+        border: 3px solid grey;
+        /*height: 1000px;*/
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.question_box{
+    border: 3px solid white;
+    height: 100px;
+    margin: 30px;
+}
+
+.contact_us_box{
+    border: 3px solid blue;
+    height: 400px;
+}
+body {
+    color: white;
+    background-color: black;
+}
